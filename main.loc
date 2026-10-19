@@ -1,0 +1,17 @@
+--' Rust implementations of the functions stream specifies
+module stream-rust (*)
+
+import stream
+import root-rust
+
+source Rust from "stream.rs"
+  ( "stream_fold_source" as foldSource
+  , "stream_fold_source" as foldSourceE
+  , "stream_collect_source" as collectSource
+  , "stream_reduce_native" as reduceNative
+  , "stream_take_pull_native" as takePullNative
+  , "stream_open_sorter" as openSorter
+  , "stream_push_sorter" as pushSorter
+  , "stream_next_sorted" as nextSortedNative
+  , "stream_close_sorter" as closeSorter
+  )

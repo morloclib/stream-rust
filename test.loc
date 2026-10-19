@@ -1,0 +1,6 @@
+--' The stream test suite against stream-rust
+module test-stream-rust (test, knownIssues)
+
+import stream.test (test, knownIssues)
+import stream-rust
+import shell-py
